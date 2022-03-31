@@ -6,7 +6,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t lubabalobuwa64/react test -f ./client/Dockerfile.dev ./client
+  - docker build -t lubabalobuwa64/react-test -f ./client/Dockerfile.dev ./client
 
 script:
   - docker run -e CI=true lubabalobuwa64/react-test npm test
